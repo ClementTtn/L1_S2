@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projet WEB - Clément Tutin</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/ecranlarge.css">
+    </head>
+
+
+    <body>
+        <header class="droite">                                                                                         <!-- Change par "droite" ou "gauche" grâce à main.js -->
+            <p class="direction"><img id="swipe" src="img/swipe.svg" alt="swipe"></p>                                   <!-- Icône pour changer de direction -->
+            <h1><a href="index.html">Road to Electricity</a></h1>                                                       <!-- Titre du site -->
+            <p><img id="ouverture_menu" src="img/menu.svg" alt="ouverture_menu"></p>                                    <!-- Icône du menu burger -->
+
+            <nav id="fermé" class="menu">                                                                               <!-- Change par "fermé" ou "ouvert" grâce à main.js -->
+                <ul>
+                    <li id="icone_fermeture"><img id="fermeture_menu" src="img/close.svg" alt="fermeture_menu"></li>    <!-- Icône de fermeture du burger -->
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="nombre_stations.html">Nombre de stations de recharge</a></li>
+                    <li><a href="carte.html">Carte des bornes en Charente-Maritime</a></li>
+                    <li><a href="puissance_bornes.html">Puissance totale des bornes</a></li>
+                    <li><a href="chiffres.html">Quelques chiffres</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Puissance totale des bornes en France</h2>
+            <p class="p_general">
+                Afin de rendre les bornes de recharge opérationnelles, celles-ci doivent être fournies en énergie électrique. C'est donc pour cette raison que les fournisseurs d'électricité ont une part importante dans le commerce des véhicules électriques. <br>
+                En France, c'est <a href="https://fr.wikipedia.org/wiki/Enedis" target="_blank">Enedis</a>, filiale d'EDF, qui est chargée de la gestion et de l'aménagement de 95% des installations territoriales.
+            </p>
+
+            <h3>Affichage des données</h3>
+            <p class="p_general">
+                Ci-dessous se trouvent les données relatives à la puissance totale des stations de recharge. Le sigle <a href="https://fr.wikipedia.org/wiki/Voltamp%C3%A8re" target="_blank">MVA</a> fait référence à l'unité de mesure "mégaVolt-Ampère".
+            </p>
+
+            <p class="titre_tableau">Affichage des données</p>
+            <ul class="puissance">                                                                                      <!-- Section où apparaissent les données de l'API -->
+
+            </ul>
+        </main>
+
+        <footer>
+            <p>
+                Clément Tutin - <a href="https://www.univ-larochelle.fr/" target="_blank">Université de la Rochelle</a><br>
+                Bases du Web - Projet 2021
+            </p>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/puissance_bornes.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </body>
+
+</html>

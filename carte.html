@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Projet WEB - Clément Tutin</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/ecranlarge.css">
+        <link rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css'>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css">
+    </head>
+
+
+    <body>
+        <header class="droite">                                                                                         <!-- Change par "droite" ou "gauche" grâce à main.js -->
+            <p class="direction"><img id="swipe" src="img/swipe.svg" alt="swipe"></p>                                   <!-- Icône pour changer de direction -->
+            <h1><a href="index.html">Road to Electricity</a></h1>                                                       <!-- Titre du site -->
+            <p><img id="ouverture_menu" src="img/menu.svg" alt="ouverture_menu"></p>                                    <!-- Icône du menu burger -->
+
+            <nav id="fermé" class="menu">                                                                               <!-- Change par "fermé" ou "ouvert" grâce à main.js -->
+                <ul>
+                    <li id="icone_fermeture"><img id="fermeture_menu" src="img/close.svg" alt="fermeture_menu"></li>    <!-- Icône de fermeture du burger -->
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="nombre_stations.html">Nombre de stations de recharge</a></li>
+                    <li><a href="carte.html">Carte des bornes en Charente-Maritime</a></li>
+                    <li><a href="puissance_bornes.html">Puissance totale des bornes</a></li>
+                    <li><a href="chiffres.html">Quelques chiffres</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Carte des bornes en Charente-Maritime</h2>
+            <p id="texte_carte">
+                L'ensemble des sites de recharge est indiqué sur la carte ci-dessous. <br>
+                Un marqueur équivaut à un site, qui peut comporter plusieurs bornes de recharge.
+            </p>
+
+            <div id="fermé_carte" class="carte_affichage">
+                <div id="carte"></div>                                                                                  <!-- Apparition de la carte -->
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                Clément Tutin - <a href="https://www.univ-larochelle.fr/" target="_blank">Université de la Rochelle</a><br>
+                Bases du Web - Projet 2021
+            </p>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/carte.js"></script>
+        <script src="js/axios.min.js"></script>
+        <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+    </body>
+
+</html>

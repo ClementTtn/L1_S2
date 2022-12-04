@@ -1,0 +1,326 @@
+/*-----------------------Général-----------------------*/
+html{
+    font-family: Calibri;
+    font-size: 100%;
+    padding: 0rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+/*------------------------Header------------------------*/
+header{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #004906;
+    justify-content: space-around;
+    padding: 1.5rem 0rem;
+    font-size: 2rem;
+}
+
+.gauche{                                                                                                                /* Inverse l'ordre des boutons */
+    flex-direction: row-reverse;
+}
+
+header a{                                                                                                               /* Mise en page du texte du nav */
+    color: white;
+    text-decoration: none;
+}
+
+/* Burger */
+#ouverture_menu{
+    cursor: pointer;
+}
+
+.droite nav{                                                                                                            /* Mise en page du nav en position droite */
+    transition: all 0.75s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    height: 100vh;
+    width: 100vw;
+    font-size: 2.5rem;
+    background-color: #15151e;
+    opacity: 50%;
+}
+
+.droite #ouvert{                                                                                                        /* Changement de la position du menu burger */
+    right: 0;
+    opacity: 100%;
+}
+
+.gauche nav{                                                                                                            /* Mise en page du nav en position gauche */
+    transition: all 0.75s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    height: 100vh;
+    width: 100vw;
+    font-size: 2.5rem;
+    background-color: #15151e;
+    opacity: 50%;
+}
+
+.gauche #ouvert{                                                                                                        /* Changement de la position du menu burger */
+    left: 0;
+    opacity: 100%;
+}
+
+#icone_fermeture{                                                                                                       /* Enlever la première bordure du menu sous le logo de fermeture du menu */
+    border: none;
+}
+
+#fermeture_menu{
+    cursor: pointer;
+}
+
+.droite nav ul li{                                                                                                      /* Mise en page des éléments du menu en position droite */
+    border-bottom: solid 1px white;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0rem 1.5rem;
+}
+
+.gauche nav ul li{                                                                                                      /* Mise en page des éléments du menu en position gauche */
+    border-bottom: solid 1px white;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;                                                                                                /* Mettre row-reverse pour droite */
+    margin: 0rem 1.5rem;
+}
+
+header nav li:last-of-type{                                                                                             /* Enlever la dernière bordure du menu sous le dernier lien */
+    border: none;
+}
+
+li a{                                                                                                                   /* Taille du texte du menu */
+    font-size: 50%;
+}
+
+
+
+
+
+/*------------------------Main------------------------*/
+main{
+    padding: 2rem 1rem;
+    margin-top: 4.5rem;
+    transition: 0.5s;
+    flex: 1;
+}
+
+main h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid #004906;
+    border-radius: 10px;
+    border-width: 3px;
+    padding: 0.25rem 0rem;
+}
+
+main .p_general{                                                                                                        /* Texte principal */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0rem 0.5rem;
+    text-align: justify;
+    line-height: 1.3rem;
+}
+
+main a{                                                                                                                 /* Liens de redirection */
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+main h3{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+/* img_marques_mobile */
+.ionity{
+    margin-bottom: 2rem;
+}
+
+main .img_ionity{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.ionity a{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.electrify_america{
+    margin-bottom: 2rem;
+}
+
+main .img_elec_america{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.electrify_america a{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.tesla{
+    margin-bottom: 1rem;
+}
+
+main .img_tesla{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.tesla a{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+/* img_marques_pc */
+.img_marques_pc{
+    display: none;
+}
+
+
+/* chiffres.html */
+.ventes_img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sources{
+    font-size: 75%;
+    margin-top: 5rem;
+}
+
+
+
+/*-----------------------Footer-----------------------*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: center;
+    background-color: #15151e;
+    color: white;
+    padding: 2rem 0rem;
+    text-align: center;
+    line-height: 1.3rem;
+}
+
+footer a{                                                                                                               /* Lien de redirection */
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/*-----------------------AJAX-----------------------*/
+
+/* nombre_stations.html */
+.titre_tableau{
+    display: flex;
+    background-color: #15151e;
+    border: none;
+    color: white;
+    margin-top: 2rem;
+    padding: 0.75rem;
+    justify-content: center;
+}
+
+.stations {                                                                                                             /* Données de l'API qui apparaissent au chargement de la page */
+    padding: 1rem;
+    padding-left: 2rem;
+    border: 1px solid #15151e;
+    border-width: 3px;
+}
+
+.stations li:first-of-type{                                                                                             /* Enlever la marge-top de la première ligne de l'API */
+    margin-top: 0rem;
+}
+
+.stations li{
+    margin-top: 1rem;
+}
+
+
+
+/* carte.html */
+#texte_carte{                                                                                                           /* Texte d'introduction de la carte */
+    margin: 1rem 0rem;
+}
+
+#carte{                                                                                                                 /* Hauteur de la carte */
+    height: 31rem;
+}
+
+#ouverture_carte{                                                                                                       /* Cf "carte.js" -> mettre la carte au second plan par rapport au menu burger */
+	position:relative;
+	z-index: -1;
+}
+
+/* Pop-Up de la carte */
+#carte h4{                                                                                                              /* Titre des sections */
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-bottom: 0rem;
+}
+
+#carte p{                                                                                                               /* Détail des sections */
+    padding: 0;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+    font-size: 0.60rem;
+}
+
+
+
+/* puissance_bornes.html */
+.puissance{                                                                                                             /* Données de l'API qui apparaissent au chargement de la page */
+    padding: 1rem;
+    padding-left: 2rem;
+    border: 1px solid #15151e;
+    border-width: 3px;
+}
+
+.puissance li:first-of-type{                                                                                            /* Enlever la marge-top de la première ligne de l'API */
+    margin-top: 0rem;
+}
+
+.puissance li{
+    margin-top: 1rem;
+}

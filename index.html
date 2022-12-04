@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projet WEB - Clément Tutin</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/ecranlarge.css">
+    </head>
+
+
+    <body>
+        <header class="droite">                                                                                         <!-- Change par "droite" ou "gauche" grâce à main.js -->
+            <p class="direction"><img id="swipe" src="img/swipe.svg" alt="swipe"></p>                                   <!-- Icône pour changer de direction -->
+            <h1><a href="index.html">Road to Electricity</a></h1>                                                       <!-- Titre du site -->
+            <p><img id="ouverture_menu" src="img/menu.svg" alt="ouverture_menu"></p>                                    <!-- Icône du menu burger -->
+
+            <nav id="fermé" class="menu">                                                                               <!-- Change par "fermé" ou "ouvert" grâce à main.js -->
+                <ul>
+                    <li id="icone_fermeture"><img id="fermeture_menu" src="img/close.svg" alt="fermeture_menu"></li>    <!-- Icône de fermeture du burger -->
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="nombre_stations.html">Nombre de stations de recharge</a></li>
+                    <li><a href="carte.html">Carte des bornes en Charente-Maritime</a></li>
+                    <li><a href="puissance_bornes.html">Puissance totale des bornes</a></li>
+                    <li><a href="chiffres.html">Quelques chiffres</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Accueil</h2>
+            <p class="p_general">
+                Ce site propose une multitude d’informations concernant les bornes de recharges pour les véhicules électriques et hybride situées en France métropolitaine.
+            </p>
+
+            <h3>Une nouvelle ère</h3>
+            <p class="p_general">
+                La transition énergétique vers des énergies vertes est au cœur de notre quotidien, à commencer par les déplacements que nous effectuons ainsi que nos habitudes de consommation. <br><br>
+                Les véhicules électriques font leurs apparition sur le marché public au début de la décennie précédente. Parmi ces véhicules exploitant cette technologie émergente, une marque se détache : <a href="https://fr.wikipedia.org/wiki/Tesla_(automobile)" target="_blank">Tesla</a>. Le projet d’Elon Musk qui semblait infaisable il y a encore 15 ans est désormais le leader (mondial) incontesté dans ce registre. <br><br>
+                Ce pari de s’implanter les premiers dans ce marché d’avenir leur a permis d’être aujourd’hui les pionniers dans ce domaine et d’ainsi démocratiser leur parc de bornes de recharges publiques. Ce n’est pas par hasard que celui-ci est par ailleurs le plus important au monde. <br><br>
+                Face à cet engouement, de nouvelles sociétés se sont lancées dans l’aventure comme <a href="https://fr.wikipedia.org/wiki/Ionity" target="_blank">Ionity</a> en Europe et <a href="https://en.wikipedia.org/wiki/Electrify_America" target="_blank">Electrify America</a> aux USA. <br><br>
+            </p>
+
+
+            <article class="compagnies">
+                <h2>Les compagnies majeures</h2>
+                <p class="p_general">
+                    Les trois compagnies mentionnées ci-dessus possèdent à elles seules plus de 20 000 bornes réparties dans 3000 stations en Europe, en Asie et aux États-Unis.<br>
+                    Retrouvez ci-dessous en détail l'implantation des différents opérateurs à travers le monde.
+                </p>
+
+                <div class="img_marques_mobile">
+                    <div class="ionity">
+                        <img class="img_ionity" src="img/marques_mobile/ionity.jpg" alt="ionity">
+                        <a href="https://ionity.eu/en/where-and-how.html" target="_blank">Ionity - En savoir plus</a>
+                    </div>
+
+                    <div class="electrify_america">
+                        <img class="img_elec_america" src="img/marques_mobile/electrify_america.jpg" alt="electrify_america">
+                        <a href="https://www.electrifyamerica.com/locate-charger/" target="_blank">Electrify America - En savoir plus</a>
+                    </div>
+
+                    <div class="tesla">
+                        <img class="img_tesla" src="img/marques_mobile/tesla.jpg" alt="tesla">
+                        <a href="https://www.tesla.com/fr_FR/supercharger" target="_blank">Tesla - En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="img_marques_pc">
+                    <div class="ionity">
+                        <img class="img_ionity" src="img/marques_pc/ionity.jpg" alt="ionity">
+                        <a href="https://ionity.eu/en/where-and-how.html" target="_blank">Ionity - En savoir plus</a>
+                    </div>
+
+                    <div class="electrify_america">
+                        <img class="img_elec_america" src="img/marques_pc/electrify_america.jpg" alt="electrify_america">
+                        <a href="https://www.electrifyamerica.com/locate-charger/" target="_blank">Electrify America - En savoir plus</a>
+                    </div>
+
+                    <div class="tesla">
+                        <img class="img_tesla" src="img/marques_pc/tesla.jpg" alt="tesla">
+                        <a href="https://www.tesla.com/fr_FR/supercharger" target="_blank">Tesla - En savoir plus</a>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>
+                Clément Tutin - <a href="https://www.univ-larochelle.fr/" target="_blank">Université de la Rochelle</a><br>
+                Bases du Web - Projet 2021
+            </p>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,94 @@
+@media all and (min-width:800px){
+
+    /*-----------------------Général-----------------------*/
+    html{
+        font-size: 125%;
+    }
+
+    body main{
+        padding: 3rem 5rem;
+    }
+
+
+
+
+
+    /*------------------------Header------------------------*/
+    #swipe{
+        display: none;
+    }
+
+    .gauche #ouvert{
+        height: 100vw;
+        width: 40vw;
+        opacity: 95%;
+    }
+
+    .droite #ouvert{                                                                                                    /* N'est pas censé être utilisé car le menu est à droite, mais peut être utile si la position est switch à droite en mode smartphone et ensuite en mode PC */
+        height: 100vw;
+        width: 40vw;
+        opacity: 95%;
+    }
+
+
+
+
+
+    /*------------------------Main------------------------*/
+    /* index.html */
+    .p_general{
+        margin-bottom: 2rem;
+    }
+
+
+    /* img_marques_mobile */
+    .img_marques_mobile{
+        display: none;
+    }
+
+
+    /* img_marques_pc */
+    .img_marques_pc{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ionity{
+        margin-right: 2rem;
+    }
+
+    .electrify_america{
+        margin-right: 2rem;
+    }
+
+
+    /* carte.html */
+    .ventes_img{
+        display: flex;
+        justify-content: center;
+        width: 100%
+    }
+
+    .sources{
+        font-size: 70%;
+        margin-top: 16rem;
+    }
+
+
+
+
+
+    /*-----------------------Footer-----------------------*/
+    footer{
+        font-size: 85%;
+        z-index: 10;
+    }
+
+
+
+
+
+    /*-----------------------AJAX-----------------------*/
+
+
+}

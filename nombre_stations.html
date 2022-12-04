@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projet WEB - Clément Tutin</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/ecranlarge.css">
+    </head>
+
+
+    <body>
+        <header class="droite">                                                                                         <!-- Change par "droite" ou "gauche" grâce à main.js -->
+            <p class="direction"><img id="swipe" src="img/swipe.svg" alt="swipe"></p>                                   <!-- Icône pour changer de direction -->
+            <h1><a href="index.html">Road to Electricity</a></h1>                                                       <!-- Titre du site -->
+            <p><img id="ouverture_menu" src="img/menu.svg" alt="ouverture_menu"></p>                                    <!-- Icône du menu burger -->
+
+            <nav id="fermé" class="menu">                                                                               <!-- Change par "fermé" ou "ouvert" grâce à main.js -->
+                <ul>
+                    <li id="icone_fermeture"><img id="fermeture_menu" src="img/close.svg" alt="fermeture_menu"></li>    <!-- Icône de fermeture du burger -->
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="nombre_stations.html">Nombre de stations de recharge</a></li>
+                    <li><a href="carte.html">Carte des bornes en Charente-Maritime</a></li>
+                    <li><a href="puissance_bornes.html">Puissance totale des bornes</a></li>
+                    <li><a href="chiffres.html">Quelques chiffres</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Nombre de stations de recharge en France métropolitaine</h2>
+            <p class="p_general">
+                Le nombre de stations de recharge augmente chaque trimestre, et ce n'est pas prêt de s'arrêter.<br>
+                En effet, de plus en plus d'entreprises et de particuliers investissent dans les véhicules électriques. Si on jette un oeil sur les ventes de véhicules électriques en 2020, celles-ci ont doublé par rapport à 2019, et même triplé pour les véhicules hybrides.
+            </p>
+
+            <h3>Affichage des données</h3>
+            <p class="p_general">
+                Ci-dessous se trouve les données relatives au nombre de stations de recharge. <br>
+                Le terme "station de recharge" comprend les bornes de recharge et également les prises domestiques utilisées pour recharger un véhicule électrique ou hybride.
+            </p>
+
+            <p class="titre_tableau">Affichage des données</p>
+            <ul class="stations">                                                                                       <!-- Section où apparaissent les données de l'API -->
+
+            </ul>
+        </main>
+
+        <footer>
+            <p>
+                Clément Tutin - <a href="https://www.univ-larochelle.fr/" target="_blank">Université de la Rochelle</a><br>
+                Bases du Web - Projet 2021
+            </p>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/nombre_stations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </body>
+
+</html>
